@@ -11,6 +11,21 @@
         <input type="file" name="excel_file" required>
         <input type="submit" name="upload" value="Upload">
     </form>
+    
+    <!-- Form for downloading filtered data -->
+    <form method="POST" action="download.php">
+        <h3>Filter Options</h3>
+        <label for="start_date">Start Date:</label>
+        <input type="date" name="start_date">
+        <br>
+        <label for="end_date">End Date:</label>
+        <input type="date" name="end_date">
+        <br>
+        <label for="employee_id">Employee ID:</label>
+        <input type="text" name="employee_id">
+        <br>
+        <input type="submit" name="filter" value="Download Filtered Data">
+    </form>
 
     <?php
     // Check if the form is submitted
